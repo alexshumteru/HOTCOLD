@@ -17,7 +17,6 @@ export class RoomList {
 
   static createRoom(player: Player): GameRoom {
     const newRoom = new GameRoom(uuidv4(), [player]);
-    //newRoom.addPlayer(player);
     RoomList.rooms[newRoom.id] = newRoom;
     return newRoom;
   }
